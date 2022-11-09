@@ -1,0 +1,24 @@
+<div class="card mb-3">
+  <div class="card-header">Houses List</div>
+  <div class="card-body text-primary">
+    <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">url</th>
+        <th scope="col">Name</th>
+        <th scope="col">Region</th>
+        <th scope="col">CurrentLord</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor ="let house of houses">
+        <td>{{house.url}}</td>
+        <td>{{house.name}}</td>
+        <td>{{house.region}}</td>
+        <td>{{house.currentLord}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+</div>
